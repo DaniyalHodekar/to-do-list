@@ -3,9 +3,6 @@ const addTaskBtn = document.querySelector(".add-task-btn");
 const taskList = document.querySelector(".task-list");
 
 
-new Sortable(taskList, {
-    animation:200
-})
 
 
 
