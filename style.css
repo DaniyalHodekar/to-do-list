@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  background-color: #181829;
+  color: aliceblue;
+  padding: 1rem;
+}
+
+
+
+h1 {
+  background-image: linear-gradient(
+    to right,
+    rgb(134, 239, 172),
+    rgb(59, 130, 246),
+    rgb(147, 51, 234)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  margin: 0;
+  margin-block: .5rem;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.input-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 2rem;
+}
+
+#task-input {
+  border: none;
+  outline: none;
+  border-radius: 500px;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+    font-size: inherit;
+  width: 60vw;
+  background-color: azure;
+}
+
+.add-task-btn {
+  border: none;
+  outline: none;
+  border-radius: 500px;
+  padding: 0.5rem 1rem;
+  background-color: lightgreen;
+  color: #181829;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.add-task-btn:hover {
+    background-color:rgb(95, 175, 95);
+}
+
+
+.task-box {
+  margin: 1rem auto;
+  background-color: azure;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 500px;
+  cursor: pointer;
+}
+
+.task-box:hover {
+    background-color:rgb(91, 117, 117) ;
+}
+
+.task {
+  color: #181829;
+  font-weight: bold;
+}
+
+.remove-task-btn {
+  border: none;
+  outline: none;
+  border-radius: 500px;
+  background-color: lightcoral;
+  padding: .5rem 1em;
+  font-family: inherit;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+@media (min-width:600px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    
+
+    #task-input {
+        width: 60%;
+    }
+}
