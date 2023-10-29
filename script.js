@@ -2,11 +2,6 @@ const input = document.querySelector("#task-input");
 const addTaskBtn = document.querySelector(".add-task-btn");
 const taskList = document.querySelector(".task-list");
 
-
-
-
-
-
 addTaskBtn.addEventListener('click',()=>{
     if (input.value == '') return
     const div = document.createElement('div');
